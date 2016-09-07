@@ -1,0 +1,65 @@
+@charset "utf-8";
+/* CSS Document */
+/*
+ * 字体显示大小不一致bug修改
+ */
+p,a {
+    max-height:999999px;
+}			
+
+/*用户头像设置*/	
+.user-image-set-head {
+	padding:12px 6px;
+	text-align:center;
+}
+.user-image-set-head img {
+	width:95px;
+	height:95px;
+	border-radius:50%;
+}
+
+.mh {max-height: 100%;}
+.mw {max-width: 100%;}
+.album-old,.album-new {position: absolute;}
+.album-box {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	right:0;
+	height:100%;
+	width:100%;
+	background-color:rgba(0,0,0,1);
+	z-index:999;
+	-webkit-transition:opacity .3s ease-in;
+	transition:opacity .3s ease-in;
+}
+.album-old {
+	position: absolute;
+    width: 300px;
+    height: 300px;
+    left: 50%;
+    top: 50%;
+    margin-left: -150px;
+    margin-top: -150px;
+    background-color: rgba(255,255,255,0.8);
+}
+.upload-img {position: absolute;left:0px;top:0px;z-index: 1;overflow: hidden;}
+.upload-img img {
+	height:auto !important;
+	width:auto !important;
+}
+.upload-img.loading {
+	background:url(../images/loading.gif) no-repeat center;
+	background-size:10rem 10rem;}
+.album-old .upload-img {
+	height:100%;
+	width:100%;
+}
+.submit {
+	position:absolute;
+	left:50%;
+	bottom:0;
+	-webkit-transform:translate(-50%,160%);
+	transform:translate(-50%,160%);
+}

@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>设置头像</title>
+<meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+<meta name="renderer" content="webkit">
+<meta name="screen-orientation" content="portrait">
+<meta name="x5-orientation" content="portrait">
+<meta name="format-detection" content="telephone=no,email=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="设置头像">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Cache-Control" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<link rel="stylesheet" href="css/weui.min.css">
+<link rel="stylesheet" href="css/my-style.css">
+<link rel="stylesheet" href="css/upload/animate.css">
+</head>
+
+<body>
+<div class="container my-lover-list user-info user-image-set">
+
+    <div class="user-image-set-head">
+    	<img src="images/user-head.png" alt="用户头像" class="uis-head-image">
+    </div>
+    
+    <div class="weui_cells weui_cells_access">
+        <a class="weui_cell" href="success.html">
+            <div class="weui_cell_bd weui_cell_primary">
+            	<h3 class="title">从相册选择一张</h3>
+                <input name="photo" class="weui_uploader_input js_file" type="file" accept="image/jpg,image/jpeg,image/png">
+            </div>
+            <div class="weui_cell_ft"></div>
+        </a>
+        <a class="weui_cell" href="javascript:">
+            <div class="weui_cell_bd weui_cell_primary">
+            	<h3 class="title">拍一张照片</h3>
+                <input name="photo" class="weui_uploader_input js_file" type="file" accept="image/jpg,image/jpeg,image/png" capture="camera">
+            </div>
+            <div class="weui_cell_ft"></div>
+        </a>
+    </div>
+</div>
+<section class="album-box" style="opacity:0;z-index:-1;">
+<div class="album-old">
+    <div class="upload-img"></div>
+    <a href="javascript:void(0);" class="weui_btn weui_btn_primary submit">保 存</a>	
+</div>
+</section>
+</body>
+<script src="js/zepto-1.1.6.js"></script>
+<script src="js/upload/iscroll-zoom.js"></script>
+<script src="js/upload/canvas-resize.js"></script>
+<script src="js/upload/script.js"></script>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
